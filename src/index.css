@@ -1,0 +1,38 @@
+/* Reset CSS */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+input:focus {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+
+/* Famous Tags  */
+input {
+  margin: 0 0.5rem;
+  padding: 0.5rem 0.75rem;
+}
+input[type="submit"] {
+  background: #212121;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* React Logo */
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
