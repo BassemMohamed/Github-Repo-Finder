@@ -43,11 +43,18 @@ const CardControl = styled.div`
   top: 0.8rem;
   right: 0.8rem;
   cursor: pointer;
+
+  > span {
+    padding: 3px;
+  }
 `;
 
 export default ({
   repo: { id, name, url, description, owner, forkCount, watchers, stargazers },
-  onDelete
+  onDelete,
+  onMinus,
+  onAdd,
+  repo
 }) => (
   <Card>
     <h4 onClick={() => window.open(url)}>{name}</h4>
@@ -72,7 +79,9 @@ export default ({
       </div>
     </CardContent>
     <CardControl>
-      <span onClick={() => onDelete(id)}>{icons.trashcan}</span>
+      {onDelete && <span onClick={() => onDelete(id)}>{icons.trashcan}</span>}
+      {onAdd && <span onClick={() => onAdd(repo)}>{icons.plus}</span>}
+      {onMinus && <span onClick={() => onMinus(id)}>{icons.minus}</span>}
     </CardControl>
   </Card>
 );

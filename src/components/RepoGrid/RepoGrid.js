@@ -5,35 +5,55 @@ import Repo from "../Repo";
 const RepoGridDom = styled.div`
   > div {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 450px auto auto auto;
     grid-gap: 25px;
   }
 `;
 
 class RepoGrid extends React.Component {
   state = {
-    repoList: this.props.repos
+    repoList: this.props.repos,
+    savedReposList: []
   };
+
+  componentWillReceiveProps(nextProps) {
+    const { repos } = nextProps;
+    if (this.state.repoList !== repos) {
+      this.setState({ repoList: repos });
+    }
+  }
 
   handleDelete = id => {
     const { repoList } = this.state;
     this.setState({
-      repoList: [...repoList.filter(repo => repo.node.id !== id)]
+      repoList: [...repoList.filter(repo => repo.id !== id)]
     });
   };
 
   render() {
-    const { totalCount } = this.props;
+    const { totalCount, onAdd, onMinus } = this.props;
     const { repoList } = this.state;
 
     return (
       <RepoGridDom>
-        <p>{`Showing ${repoList.length} of ${totalCount} Repositories 🔥`}</p>
-        <div>
-          {repoList.map(({ node }) => (
-            <Repo key={node.id} repo={node} onDelete={this.handleDelete} />
-          ))}
-        </div>
+        {repoList.length > 0 && (
+          <React.Fragment>
+            {totalCount && (
+              <h3>{`Showing ${repoList.length} of ${totalCount} Repositories 🔥`}</h3>
+            )}
+            <div>
+              {repoList.map(repo => (
+                <Repo
+                  repo={repo}
+                  key={repo.id}
+                  onAdd={onAdd}
+                  onMinus={onMinus}
+                  onDelete={this.handleDelete}
+                />
+              ))}
+            </div>
+          </React.Fragment>
+        )}
       </RepoGridDom>
     );
   }
