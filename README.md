@@ -1,42 +1,43 @@
-# Code Challenge: GitHub repository finder
+# Github Repo Finder
 
-## Getting started!
 
-1. Clone the `.env.default` file to a new `.env` file.
-2. Insert your [GitHub Authentication Token](https://github.com/settings/tokens/new) in the `.env` file
-3. Run `npm install`
-4. Run `npm start`
+<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
+![GitHub repo size](https://img.shields.io/github/repo-size/bassemmohamed/Github-Repo-Finder)
+![GitHub contributors](https://img.shields.io/github/contributors/bassemmohamed/Github-Repo-Finder)
+![GitHub stars](https://img.shields.io/github/stars/bassemmohamed/Github-Repo-Finder?style=social)
+![GitHub forks](https://img.shields.io/github/forks/bassemmohamed/Github-Repo-Finder?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/bassemmohamed94?style=social)
 
-## Challenge goal!
+Project name is a Github Repo Finder that allows users to search for github repos and pin them.
 
-The goal of this challenge is to build a GitHub repository finder app.
-Please use the GitHub GraphQL API Endpoint with the Apollo Client.
-To prevent you from wasting time to setup the environment: we use Create React App.
+## Prerequisites
 
-https://developer.github.com/v4/
+Before you begin, ensure you have met the following requirements:
 
-If you have any questions, don't hesitate to ask. You don't have to complete all steps. Have fun! We are curious to see your result.
+* You have installed node
+* You have installed npm
 
-## Step 1
+## Installing Github Repo Finder
 
-Add a search field. The user uses this field to search for a repository. Depending on the query, the app suggests possible repositories (name).
+To install Github Repo Finder, follow these steps:
 
-## Step 2
+1. Clone the repo
+2. Open terminal in the project's folder
+3. run `npm install`
+4. Clone the `.env.default` file to a new `.env` file.
+5. Insert your [GitHub Authentication Token](https://github.com/settings/tokens/new) in the `.env` file
 
-Upon confirmation, the repository should be added to a card view with following information:
+## Using Github Repo Finder
 
-- name
-- owner with name and picture
-- forkCount, watchers, stargazers
+To use Github Repo Finder, follow these steps:
 
-## Step 3
+1. Install the app using the above steps
+2. run `npm start`
 
-It would be great if the app has loading states.
+## Contact
 
-## Step 4
+If you want to contact me you can reach me at `bassemmohamed1994@gmail.com`.
 
-Add the possibility to delete a card.
+## License
 
-## Step 5
-
-Save the repository selection so that the user can see the previous selection next time.
+This project uses the following license: [GNU](https://choosealicense.com/licenses/gpl-3.0/).
