@@ -3,10 +3,10 @@
 
 <!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
 ![GitHub repo size](https://img.shields.io/github/repo-size/bassemmohamed/Github-Repo-Finder)
-![GitHub contributors](https://img.shields.io/github/contributors/bassemmohamed/Github-Repo-Finder)
-![GitHub stars](https://img.shields.io/github/stars/bassemmohamed/Github-Repo-Finder?style=social)
-![GitHub forks](https://img.shields.io/github/forks/bassemmohamed/Github-Repo-Finder?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/bassemmohamed94?style=social)
+[![GitHub contributors](https://img.shields.io/github/contributors/bassemmohamed/Github-Repo-Finder)](https://github.com/BassemMohamed/Github-Repo-Finder/graphs/contributors)
+[![GitHub stars](https://img.shields.io/github/stars/bassemmohamed/Github-Repo-Finder?style=social)](https://github.com/BassemMohamed/Github-Repo-Finder/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/bassemmohamed/Github-Repo-Finder?style=social)](https://github.com/BassemMohamed/Github-Repo-Finder/network/members)
+[![Twitter Follow](https://img.shields.io/twitter/follow/bassemmohamed94?style=social)](https://twitter.com/BassemMohamed94)
 
 Project name is a Github Repo Finder that allows users to search for github repos and pin them.
 
